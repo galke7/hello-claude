@@ -25,4 +25,4 @@ def ask(prompt: str) -> str:
         return f"API error {e.status_code}: {e.message}"
 
 if __name__ == "__main__":
-    print(ask("Say your model name and vesion, be short and specific format respons must be modelName-subName-versionNum-subVesionNum."))
+    print(ask("Say your model name and version, be short and specific format response must be modelName-subName-versionNum-subVesionNum."))
