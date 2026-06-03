@@ -23,3 +23,6 @@ def ask(prompt: str) -> str:
         return "Invalid API key."
     except anthropic.APIStatusError as e:
         return f"API error {e.status_code}: {e.message}"
+
+if __name__ == "__main__":
+    print(ask("Say your model name and vesion, be short and specific format respons must be modelName-subName-versionNum-subVesionNum."))
